@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main class="back">
+  <!-- Левая панель -->
+  <section class="left-panel">
+      <div class="elements-row">
+         <div><h2>Create an Account</h2></div>
+      
+        <form class="name-lastname">
+            <div class="name">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" class="input-block">
+            </div>
+            <div class="name">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" class="input-block">
+            </div>
+        </form>
+                
+        <form class="email">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" class="input-block">
+              <p class="p-email">We'll never share your email with anyone    
+              else.<p>
+        </form>
+
+        <form class="radiobutton">  
+          <div>
+              <input type="radio" name="radio" id="male">
+              <label for="male">Male</label>
+          </div>
+          <div>
+              <input type="radio" name="radio" id="female">
+              <label for="female">Female</label>
+          </div>
+        </form>
+
+        <div class="country-city">
+          <div class="country">
+          <label for="country">Country</label>
+          <select name="country" size="1" class="input-select">
+            <option value="ukraine">Ukraine</option>
+            <option value="uk">United Kingdom</option>
+            <option value="germany">Germany</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+          </select>
+        </div>
+          
+          <div class="city">
+              <label for="city">City</label>
+              <input type="text" id="city" class="input-block">
+          </div>
+        </div>
+
+        <form class="signup">
+            <input type="submit" value="Sign Up" class="button">
+            <p class="p-signup">By clicking the 'Sign Up' button, you confirm that you accept our <br> <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a><p>
+        </form>
+      </div>
+      <hr>
+      <div class="p-login">
+      <div><p>Have an account?</p></div>
+      <div><p><a href="#">Log In</a></p></div>
+      </div>
+  </section>
+  
+
+  <!-- Правая панель -->
+  <section class="right-panel">
+    <div class="elements-row">
+        <div><h2>Profile</h2></div>
+
+        <form class="profile">
+            <div><img src="photo.jpg" alt="Photo"></div>
+
+            <div><input type="file" name="file" class="upload-file">
+                <p class="p-email"> Up to 1 MB (300x300 px)</p>
+              
+              </div>
+              <div><button type="reset" class="button-clear"></button> 
+              </div>
+        </form>
+      
+        <form class="name-lastname">
+          <div class="name">
+              <label for="firstname">Name</label>
+              <input type="text" id="firstname" class="input-block">
+          </div>
+          <div class="name">
+              <label for="lastname">E-mail</label>
+              <input type="email" id="lastname" class="input-block">
+          </div>
+      </form>
+
+      <div class="country-city">
+        <div class="country">
+        <label for="country">Country</label>
+        <select name="country" size="1" class="input-select">
+          <option value="ukraine">Ukraine</option>
+          <option value="uk">United Kingdom</option>
+          <option value="germany">Germany</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+        </select>
+      </div>
+        
+        <div class="city">
+            <label for="city">City</label>
+            <input type="text" id="city" class="input-block">
+        </div>
+      </div>
+      
+      <form class="name-lastname">
+        <div class="name">
+            <label for="firstname">Zip Code</label>
+            <input type="text" id="firstname" class="input-block">
+        </div>
+        <div class="name">
+            <label for="lastname">Phone Number</label>
+            <input type="text" id="lastname" class="input-block">
+        </div>
+    </form>
+
+    <form class="update">
+      <input type="submit" value="Update" class="button">
+      
+  </form>
+
+</div>
+
+
+</section>
+
+
+
+</main>
+    
+</body>
+
+</html>
