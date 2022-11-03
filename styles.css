@@ -104,15 +104,23 @@ border-color: #007BFF
 
 .input-select:focus{
 outline: #007BFF;
+
+}
+
+.input-select:link{
+color: #007BFF;
 }
 
 a{
 color: #007BFF;
 }
 
+.a-login{
+text-decoration: none;
+}
+
 .radiobutton {
 margin: 0px;
-/* margin-top: -38px; */
 display: flex;
 flex-direction: row;
 column-gap: 21px;
@@ -187,15 +195,7 @@ margin: 0px;
 height: 45px;
 }
 
-input[type=file]{
-width: ;
-}
 
-.upload-file {
-width: 118px;
-margin: 0px;
-margin-bottom: 9px;
-}
 
 .profile{
 margin: 0;
@@ -225,3 +225,15 @@ background-repeat: no-repeat;
 background-size: 15px;
 background-position: center;
 }
+
+.file-label {
+cursor: pointer;
+
+}
+
+.upload-file {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+

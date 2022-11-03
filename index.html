@@ -13,7 +13,7 @@
 <body>
 
 <main class="back">
-  <!-- Левая панель -->
+  <!-- Left panel -->
   <section class="left-panel">
       <div class="elements-row">
          <div><h2>Create an Account</h2></div>
@@ -48,16 +48,17 @@
         </form>
 
         <div class="country-city">
-          <div class="country">
+          <form class="country">
           <label for="country">Country</label>
-          <select name="country" size="1" class="input-select">
+          <select name="country" id="country" class="input-select">
+            <option value="" disabled selected>Select</option>
             <option value="ukraine">Ukraine</option>
             <option value="uk">United Kingdom</option>
             <option value="germany">Germany</option>
             <option value="usa">USA</option>
             <option value="canada">Canada</option>
           </select>
-        </div>
+        </form>
           
           <div class="city">
               <label for="city">City</label>
@@ -73,25 +74,28 @@
       <hr>
       <div class="p-login">
       <div><p>Have an account?</p></div>
-      <div><p><a href="#">Log In</a></p></div>
+      <div><p><a href="#" class="a-login">Log In</a></p></div>
       </div>
   </section>
   
 
-  <!-- Правая панель -->
+  <!-- Right panel -->
   <section class="right-panel">
     <div class="elements-row">
         <div><h2>Profile</h2></div>
 
         <form class="profile">
-            <div><img src="photo.jpg" alt="Photo"></div>
 
-            <div><input type="file" name="file" class="upload-file">
-                <p class="p-email"> Up to 1 MB (300x300 px)</p>
-              
-              </div>
-              <div><button type="reset" class="button-clear"></button> 
-              </div>
+            <div><img src="photo.jpg" alt="Photo"></div>
+            
+            <div>
+            <label for="upload">Browse</label>
+            <input type="file" id="upload" class="upload-file"></div>
+
+            <div><p class="p-email"> Up to 1 MB (300x300 px)</p></div>
+                          
+           <div><button type="reset" class="button-clear"></button> 
+          </div>
         </form>
       
         <form class="name-lastname">
